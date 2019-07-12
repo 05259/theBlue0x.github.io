@@ -1,11 +1,11 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
+    "title": "Blue0x Decentralized Exchange",
+    "name": "Blue0x Decentralized Exchange",
     "version": "5.0.8",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "A grayscale one page HTML theme for Bootstrap.",
+    "description": "Blue0x Decentralized Exchange.",
     "keywords": [
         "css",
         "sass",
