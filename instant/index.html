@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://instant.0x.org/instant.js"></script>
+  <link rel="shortcut icon" type="image/png" href="icon-196x196.png">
+  <link rel="shortcut icon" sizes="196x196" href="icon-196x196.png">
+  <link rel="apple-touch-icon" href="icon-196x196.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Instantly Buy ERC20 Token via Blue0x">
+  <meta name="author" content="Blue0x">
+
+  <title>Blue0x</title>
+  </head>
+    <body>
+        <script>
+            zeroExInstant.render({
+                orderSource: 'https://api.0x.org/sra/',
+                affiliateInfo: {
+                    feeRecipient: '0x3b0cd65f70079c0773721e819242dabde4e6693f',
+                    feePercentage: 0.0025
+                },
+                availableAssetDatas: [
+                    '0xf47261b0000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', 
+                    '0xf47261b00000000000000000000000006b175474e89094c44da98b954eedeac495271d0f'
+                ]
+                }, 'body');
+        </script>
+    </body>
+</html>
