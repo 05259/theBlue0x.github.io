@@ -23,19 +23,32 @@
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
+  
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js" data-semver="2.0.3" data-require="jquery"></script>
+  <script type="text/javascript" src="http://www.appelsiini.net/projects/chained/jquery.chained.js?v=0.9.10"></script>
+  <script src="script.js"></script>
 
 </head>
+  
 <body id="page-top">
-
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         
-         
-         
-         <button onClick="window.location.href = 'index.html';"> Exchange </button>  </header>
-
-
+          <select class="form-control" id="base">
+          <option value="">Choose the currency you have (sell)</option>
+          <option value="USDT">USDT - United States Dollar (Tether)</option>
+          <option value="USDC">USDC - United States Dollar (Coinbase)</option>
+          <option value="IRR">IRR - Iranian Rial</option>
+       </select>
+       <select class="form-control" id="quote">
+          <option value=""> Choose the currency you want (buy) </option>
+          <option value="USDT">USDT - United States Dollar (Tether)</option>
+          <option value="USDC">USDC - United States Dollar (Coinbase)</option>
+          <option value="IRR">IRR - Iranian Rial</option>
+       </select>
+  </header>
+  
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
