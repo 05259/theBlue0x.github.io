@@ -46,12 +46,13 @@
           <option value="USDT">USDT - United States Dollar (Tether)</option>
           <option value="USDC">USDC - United States Dollar (Coinbase)</option>
           </select>
-      <script>
-      var base = document.getElementById("base")
-      var quote = document.getElementById("quote")
+      <script type="text/javascript">
+      var base = document.getElementById("base").value;
+      var quote = document.getElementById("quote").value;
       </br>
-      window.location.href = "trade.blue0x.io/#/erc20/?base="+base+"&quote="+quote+"";> Continue </button>
       </script>
+      <button onClick="window.location.href ="trade.blue0x.io/#/erc20/?base="+base+"&quote="+quote+"";> Continue </button>
+
       </br>
       </br>
       </br>
