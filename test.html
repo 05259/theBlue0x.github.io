@@ -29,7 +29,11 @@
   <script src="script.js"></script>
 
 </head>
-<body>
+<body id="page-top">
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h2 class="text-white mx-auto mt-2 mb-5"> Which currencies would you like to exchange: </h2>
 
 <select id="locality-dropdown" name="locality">
 </select>
@@ -47,7 +51,7 @@ const url = 'https://openexchangerates.org/api/currencies.json';
 // Populate dropdown with list of provinces
 $.getJSON(url, function (data) {
   $.each(data, function (key, entry) {
-    dropdown.append($('<option></option>').attr('value', entry.abbreviation).text(entry.name));
+    dropdown.append($('<option></option>').attr('value', entry.key).text(entry.value));
   })
 });
 </script>
