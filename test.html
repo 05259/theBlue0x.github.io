@@ -47,13 +47,12 @@ dropdown.empty();
 dropdown.append('<option selected="true" disabled>Choose the currency you have</option>');
 dropdown.prop('selectedIndex', 0);
 
-const url = 'https://openexchangerates.org/api/currencies.json
-';
+const url = 'https://openexchangerates.org/api/currencies.json';
 
 // Populate dropdown with list of provinces
 $.getJSON(url, function (data) {
   $.each(data, function (key, value) {
-  dropdown.append($('<option></option>').attr('value', key).text(value));
+  dropdown.append($('<option></option>').attr(key).text(value));
   })
 });
 </script>
