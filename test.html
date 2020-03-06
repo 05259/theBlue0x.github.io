@@ -38,7 +38,10 @@
 
 <select name="baseCurrency">
   <option value=""> I have this currency ... </option>
-	<option value="USD">United States Dollars</option>
+	<option value="USDC">United States Dollars (Coinbase)</option>
+	<option value="USDT">United States Dollars (Tether)</option>
+	<option value-"WETH">Wrapped Ethereum</option>
+	<option value-"ETH">Ethereum</option>
 	<option value="EUR">Euro</option>
 	<option value="GBP">United Kingdom Pounds</option>
 	<option value="DZD">Algeria Dinars</option>
@@ -110,9 +113,7 @@
 	<option value="TRL">Turkey Lira</option>
 	<option value="VEB">Venezuela Bolivar</option>
 	<option value="ZMK">Zambia Kwacha</option>
-	<option value="EUR">Euro</option>
 	<option value="XCD">Eastern Caribbean Dollars</option>
-	<option value="XDR">Special Drawing Right (IMF)</option>
 	<option value="XAG">Silver Ounces</option>
 	<option value="XAU">Gold Ounces</option>
 	<option value="XPD">Palladium Ounces</option>
@@ -121,7 +122,10 @@
         
 <select name="quoteCurrency">
   <option value=""> I would like this currency ... </option>
-	<option value="USD">United States Dollars</option>
+	<option value="USDC">United States Dollars (Coinbase)</option>
+	<option value="USDT">United States Dollars (Tether)</option>
+        <option value-"WETH">Wrapped Ethereum</option>
+	<option value-"ETH">Ethereum</option>
 	<option value="EUR">Euro</option>
 	<option value="GBP">United Kingdom Pounds</option>
 	<option value="DZD">Algeria Dinars</option>
@@ -193,9 +197,7 @@
 	<option value="TRL">Turkey Lira</option>
 	<option value="VEB">Venezuela Bolivar</option>
 	<option value="ZMK">Zambia Kwacha</option>
-	<option value="EUR">Euro</option>
 	<option value="XCD">Eastern Caribbean Dollars</option>
-	<option value="XDR">Special Drawing Right (IMF)</option>
 	<option value="XAG">Silver Ounces</option>
 	<option value="XAU">Gold Ounces</option>
 	<option value="XPD">Palladium Ounces</option>
@@ -207,8 +209,10 @@
         {
           var e = document.getElementById("baseCurrency");
           var base = e.options[e.selectedIndex].value;
+		base.toLowerCase();
           var d = document.getElementById("quoteCurrency");
           var quote = d.options[e.selectedIndex].value;
+		quote.toLowerCase();
           window.location.href = "https://trade.blue0x.io/#/erc20/?base=" + base + "&quote=" + quote;
         }
  </script>
