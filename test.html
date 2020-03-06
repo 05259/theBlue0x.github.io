@@ -36,7 +36,7 @@
       <div class="mx-auto text-center">
         <h2 class="text-white mx-auto mt-2 mb-5"> Which currencies would you like to exchange: </h2>
 
-<select name="baseCurrency">
+<select class="form-control" id="baseCurrency">
   <option value=""> I have this currency ... </option>
 	<option value="USDC">United States Dollars (Coinbase)</option>
 	<option value="USDT">United States Dollars (Tether)</option>
@@ -119,8 +119,10 @@
 	<option value="XPD">Palladium Ounces</option>
 	<option value="XPT">Platinum Ounces</option>
 </select>
+	      
 </br>    
-<select name="quoteCurrency">
+	    
+<select class="form-control" id="quoteCurrency">
   <option value=""> I would like this currency ... </option>
 	<option value="USDC">United States Dollars (Coinbase)</option>
 	<option value="USDT">United States Dollars (Tether)</option>
@@ -216,9 +218,10 @@
           window.location.href = "https://trade.blue0x.io/#/erc20/?base=" + base + "&quote=" + quote;
         }
  </script>
+	    
       </br>
-     <!-- <button onClick="passUrl()"> Continue </button>-->
-      <button onClick="window.location.href = 'comingsoon.html';"> Continue </button>
+      <button onClick="passUrl()"> Continue </button>
+      <!--<button onClick="window.location.href = 'comingsoon.html';"> Continue </button>-->
       </br>
       </br>
       </br>
