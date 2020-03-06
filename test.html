@@ -53,7 +53,7 @@ const url = 'https://openexchangerates.org/api/currencies.json
 // Populate dropdown with list of provinces
 $.getJSON(url, function (data) {
   $.each(data, function (key, value) {
-  dropdown.append($('<option></option>').attr('value', entry.key).text(entry.value));
+  dropdown.append($('<option></option>').attr('value', key).text(value));
   })
 });
 </script>
