@@ -1,4 +1,8 @@
 {
+  "USDC": "United States Dollar (Coinbase)",
+  "USDT": "United States Dollar (Tether)",
+  "WETH": "Wrapped Ethereum (wETH)",
+  "ETH" : "Ethereum",
   "AED": "United Arab Emirates Dirham",
   "AFN": "Afghan Afghani",
   "ALL": "Albanian Lek",
