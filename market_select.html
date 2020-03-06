@@ -47,11 +47,13 @@
           <option value="USDC">USDC - United States Dollar (Coinbase)</option>
           </select>
       <script type="text/javascript">
-      var base = document.getElementById("base").value;
-      var quote = document.getElementById("quote").value;
-      </br>
+      function passurl()
+        {
+          var base = document.getElementById("base").value;
+          var quote = document.getElementById("quote").value;
+        }
       </script>
-      <button onClick="window.location.href ="trade.blue0x.io/#/erc20/?base="+base+"&quote="+quote+"";> Continue </button>
+      <button onClick="window.location.href ='trade.blue0x.io/#/erc20/?base="+base+"&quote="+quote+"';"> Continue </button>
 
       </br>
       </br>
