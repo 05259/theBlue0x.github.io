@@ -210,11 +210,10 @@
       function passUrl()
         {
           var e = document.getElementById("baseCurrency");
-          var base = e.options[e.selectedIndex].value;
-		base.toLowerCase();
+          var base = e.options[e.selectedIndex].value.toLowerCase();
           var d = document.getElementById("quoteCurrency");
-          var quote = d.options[e.selectedIndex].value;
-		quote.toLowerCase();
+	  var quote = d.options[e.selectedIndex].value.toLowerCase();
+
           window.location.href = "https://trade.blue0x.io/#/erc20/?base=" + base + "&quote=" + quote;
         }
  </script>
