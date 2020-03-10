@@ -1,6 +1,6 @@
 {
-  "USDC": "United States Dollar (Coinbase)",
-  "USDT": "United States Dollar (Tether)",
-  "DAI": "DAI Stablecoin",
-  "ETH": "Ethereum"
+  "USDC": "United States Dollar Coin (USDC)",
+  "USDT": "United States Dollar Tether (USDT)",
+  "DAI": "DAI Stablecoin (DAI)",
+  "ETH": "Ethereum (ETH)"
 }
