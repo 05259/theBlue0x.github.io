@@ -10,5 +10,8 @@
   "JPYC": "Japanese Yen (JPYC)",
   "NZDC": "New Zealand Dollar (NZDC)",
   "RUBC": "Russian Ruble (RUBC)",
-  "CHFC": "Swiss Franc (CHFC)"
+  "CHFC": "Swiss Franc (CHFC)",
+  "USDT": "United States Dollar Tether (USDT)",
+  "ETH": "Ethereum (ETH)",
+  "BAT": "Basic Attention Token (BAT)"
 }
