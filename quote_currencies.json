@@ -1,14 +1,14 @@
 {
-  "AUD": "Australian Dollar",
-  "CAD": "Canadian Dollar",
-  "CHF": "Swiss Franc",
-  "CNY": "Chinese Yuan",
-  "EUR": "Euro",
-  "GBP": "British Pound Sterling",
-  "HKD": "Hong Kong Dollar",
-  "IQD": "Iraqi Dinar",
-  "IRR": "Iranian Rial",
-  "JPY": "Japanese Yen",
-  "NZD": "New Zealand Dollar",
-  "RUB": "Russian Ruble"
+  "AUDC": "Australian Dollar (AUDC)",
+  "GBPC": "British Pound Sterling (GBPC)",
+  "CADC": "Canadian Dollar (CADC)",
+  "CNYC": "Chinese Yuan (CNYC)",
+  "EURC": "Euro (EURC)",
+  "HKDC": "Hong Kong Dollar (HKDC)",
+  "IRRC": "Iranian Rial (IRRC)",
+  "IQDC": "Iraqi Dinar (IQDC)",
+  "JPYC": "Japanese Yen (JPYC)",
+  "NZDC": "New Zealand Dollar (NZDC)",
+  "RUBC": "Russian Ruble (RUBC)",
+  "CHFC": "Swiss Franc (CHFC)"
 }
