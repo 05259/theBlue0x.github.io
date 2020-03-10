@@ -297,10 +297,7 @@ footer {
 }
 
 .arrow{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    position: fixed;
 }
 .arrow span{
     display: block;
