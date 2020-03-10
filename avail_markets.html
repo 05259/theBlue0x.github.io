@@ -24,6 +24,31 @@
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
   
+<style>
+#currency {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#currency td, #currency th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+  
 </head>
 <body id="page-top">
   <header class="masthead">
@@ -35,7 +60,7 @@
 
 <h2>United States Dollar Coin (USDC)</h2>
 
-<table>
+<table id="currency">
   <tr>
     <th>Country:</th>
     <th>Market:</th>
