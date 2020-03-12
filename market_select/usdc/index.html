@@ -30,17 +30,17 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h2 class="text-white mx-auto mt-2 mb-5"> Please select the currency you would like to exchange: </h2>
+          <h2 class="text-white mx-auto mt-2 mb-5"> Please select the currency you would like to have: </h2>
 
-          <select class="form-control" id="baseCurrency">
+          <select class="form-control" id="quoteCurrency">
           </select>
 
           <script type="text/javascript">
             function passUrl() {
-              var d = document.getElementById("baseCurrency");
-              var base = d.options[d.selectedIndex].value.toLowerCase();
+              var d = document.getElementById("quoteCurrency");
+              var quote = d.options[d.selectedIndex].value.toLowerCase();
 
-              window.location.href = "./"+ base;
+              window.location.href = "https://trade.blue0x.io/#/erc20/?base=usdc&quote=" + quote;
 
             }
 
