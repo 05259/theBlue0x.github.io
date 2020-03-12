@@ -8,7 +8,7 @@ const url = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.io/mas
 // Populate dropdown with list of provinces
 $.getJSON(url, function (data) {
   $.each(data, function (key, value) {
-    dropdown.append($('<option></option>').attr('value', value).text(value));
+    dropdown.append($('<option></option>').attr('value', key).text(value));
   })
 });
 
@@ -22,8 +22,8 @@ const url2 = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.io/ma
 
 // Populate dropdown with list of provinces
 $.getJSON(url2, function (data) {
-  $.each(data, function (key, value2) {
-    dropdown2.append($('<option></option>').attr('value', value2).text(value2));
+  $.each(data, function (key2, value2) {
+    dropdown2.append($('<option></option>').attr('value', key2).text(value2));
   })
 });
 
