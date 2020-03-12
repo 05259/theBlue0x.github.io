@@ -30,13 +30,13 @@
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
         <h2 class="text-white mx-auto mt-2 mb-5"> Please select the currency you would like to exchange: </h2>
-        <select class="form-control" id="quoteCurrency">
+        <select class="form-control" id="baseCurrency">
         </select>
 
  <script type="text/javascript">
       function passUrl()
         {
-          var d = document.getElementById("quoteCurrency");
+          var d = document.getElementById("baseCurrency");
 	  var quote = d.options[d.selectedIndex].value.toLowerCase();
 
           window.location.href ="https://blue0x.io/market_select/" + quote;"
