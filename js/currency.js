@@ -21,7 +21,7 @@ const quoteurl = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.i
 
 // Populate dropdown with list of provinces
 $.getJSON(quoteurl, function (data) {
-  $.each(data, function (key, value) {
+  $.each(data, function (key, quotevalue) {
     quotedropdown.append($('<option></option>').attr('value', quotevalue).text(quotevalue));
   })
 });
