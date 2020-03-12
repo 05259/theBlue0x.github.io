@@ -1,425 +1,1313 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <link rel="shortcut icon" type="image/png" href="../icon-196x196.png">
-  <link rel="shortcut icon" sizes="196x196" href="../icon-196x196.png">
-  <link rel="apple-touch-icon" href="../icon-196x196.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Blue0x Decentralized Exchange">
-  <meta name="author" content="Blue0x">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="../icon-196x196.png">
+    <link rel="shortcut icon" sizes="196x196" href="../icon-196x196.png">
+    <link rel="apple-touch-icon" href="../icon-196x196.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Blue0x Decentralized Exchange">
+    <meta name="author" content="Blue0x">
 
-  <title>Blue0x.io</title>
+    <title>Blue0x.io All Markets</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100">
-  
-<style>
-body {
-  background-image: url("../img/bg-masthead.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: "Roboto", helvetica, arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-}
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100">
 
-div.table-title {
-  display: block;
-  margin: auto;
-  max-width: 600px;
-  padding: 5px;
-  width: 100%;
-}
+    <style>
+      body {
+        background-image: url("../img/bg-masthead.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Roboto", helvetica, arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-rendering: optimizeLegibility;
+      }
 
-.table-title h3 {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Roboto", helvetica, arial, sans-serif;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-}
+      div.table-title {
+        display: block;
+        margin: auto;
+        max-width: 600px;
+        padding: 5px;
+        width: 100%;
+      }
+
+      .table-title h3 {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Roboto", helvetica, arial, sans-serif;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+      }
 
 
-/*** Table Styles **/
+      /*** Table Styles **/
 
-.table-fill {
-  background: white;
-  border-radius: 3px;
-  border-collapse: collapse;
-  height: 30px;
-  margin: auto;
-  max-width: 600px;
-  padding: 5px;
-  width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  animation: float 5s infinite;
-}
+      .table-fill {
+        background: white;
+        border-radius: 3px;
+        border-collapse: collapse;
+        height: 30px;
+        margin: auto;
+        max-width: 600px;
+        padding: 5px;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        animation: float 5s infinite;
+      }
 
-th {
-  color: #ffffff;
-  background: #2775CA;
-  border-bottom: 4px solid #9ea7af;
-  border-right: 1px solid #343a45;
-  font-size: 14px;
-  font-weight: 400;
-  padding: 13px;
-  text-align: left;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  vertical-align: middle;
-}
+      th {
+        color: #ffffff;
+        background: #2775CA;
+        border-bottom: 4px solid #9ea7af;
+        border-right: 1px solid #343a45;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 13px;
+        text-align: left;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        vertical-align: middle;
+      }
 
-th:first-child {
-  border-top-left-radius: 3px;
-}
+      th:first-child {
+        border-top-left-radius: 3px;
+      }
 
-th:last-child {
-  border-top-right-radius: 3px;
-  border-right: none;
-}
+      th:last-child {
+        border-top-right-radius: 3px;
+        border-right: none;
+      }
 
-tr {
-  border-top: 1px solid #C1C3D1;
-  border-bottom: 1px solid #C1C3D1;
-  color: #000000;
-  font-size: 14px;
-  font-weight: normal;
-  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
-}
+      tr {
+        border-top: 1px solid #C1C3D1;
+        border-bottom: 1px solid #C1C3D1;
+        color: #000000;
+        font-size: 14px;
+        font-weight: normal;
+        text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+      }
 
-tr:hover td {
-  background: #4E5066;
-  color: #FFFFFF;
-  border-top: 1px solid #22262e;
-}
+      tr:hover td {
+        background: #4E5066;
+        color: #FFFFFF;
+        border-top: 1px solid #22262e;
+      }
 
-tr:first-child {
-  border-top: none;
-}
+      tr:first-child {
+        border-top: none;
+      }
 
-tr:last-child {
-  border-bottom: none;
-}
+      tr:last-child {
+        border-bottom: none;
+      }
 
-tr:nth-child(odd) td {
-  background: #EBEBEB;
-}
+      tr:nth-child(odd) td {
+        background: #EBEBEB;
+      }
 
-tr:nth-child(odd):hover td {
-  background: #4E5066;
-}
+      tr:nth-child(odd):hover td {
+        background: #4E5066;
+      }
 
-tr:last-child td:first-child {
-  border-bottom-left-radius: 3px;
-}
+      tr:last-child td:first-child {
+        border-bottom-left-radius: 3px;
+      }
 
-tr:last-child td:last-child {
-  border-bottom-right-radius: 3px;
-}
+      tr:last-child td:last-child {
+        border-bottom-right-radius: 3px;
+      }
 
-td {
-  background: #FFFFFF;
-  padding: 16px;
-  text-align: left;
-  vertical-align: middle;
-  font-weight: 300;
-  font-size: 14px;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-  border-right: 1px solid #C1C3D1;
-}
+      td {
+        background: #FFFFFF;
+        padding: 16px;
+        text-align: left;
+        vertical-align: middle;
+        font-weight: 300;
+        font-size: 14px;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+        border-right: 1px solid #C1C3D1;
+      }
 
-td:last-child {
-  border-right: 0px;
-}
+      td:last-child {
+        border-right: 0px;
+      }
 
-th.text-left {
-  text-align: left;
-}
+      th.text-left {
+        text-align: left;
+      }
 
-th.text-center {
-  text-align: center;
-}
+      th.text-center {
+        text-align: center;
+      }
 
-th.text-right {
-  text-align: right;
-}
+      th.text-right {
+        text-align: right;
+      }
 
-td.text-left {
-  text-align: left;
-}
+      td.text-left {
+        text-align: left;
+      }
 
-td.text-center {
-  text-align: center;
-}
+      td.text-center {
+        text-align: center;
+      }
 
-td.text-right {
-  text-align: right;
-}
+      td.text-right {
+        text-align: right;
+      }
 
-</style>
-</head>
+    </style>
+  </head>
 
-<body>
-  <div class="table-title">
-    <h3>Currently Available Markets:</h3>
-  </div>
+  <body>
+    <div class="table-title">
+      <h3>Currently Available Markets:</h3>
+    </div>
 
-  <table class="table-fill">
+    <table class="table-fill">
 
-    <thead>
-      <tr>
-        <th class="text-left">United States Dollar Coin (USDC)</th>
-        <th class="text-left">Link</th>
-        <th class="text-center">Available</th>
-      </tr>
-    </thead>
+      <thead>
+        <tr>
+          <th class="text-left">United States Dollar Coin (USDC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
 
-    <tbody class="table-hover">
-      <tr>
-        <td class="text-left">Australian Dollar (AUDC)</td>
-        <td class="text-left">USDC/AUDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">British Pound Sterling (GBPC)</td>
-        <td class="text-left">USDC/GBPC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Canadian Dollar (CADC)</td>
-        <td class="text-left">USDC/CADC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Chinese Yuan (CNYC)</td>
-        <td class="text-left">USDC/CNYC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Euro (EURC)</td>
-        <td class="text-left">USDC/EURC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Hong Kong Dollar (HKDC)</td>
-        <td class="text-left">USDC/HKDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Iranian Rial (IRRC)</td>
-        <td class="text-left">USDC/IRRC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Iraqi Dinar (IQDC)</td>
-        <td class="text-left">USDC/IQDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Japanese Yen (JPYC)</td>
-        <td class="text-left">USDC/JPYC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">New Zealand Dollar (NZDC)</td>
-        <td class="text-left">USDC/NZDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Russian Ruble (RUBC)</td>
-        <td class="text-left">USDC/RUBC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Swiss Franc (CHFC)</td>
-        <td class="text-left">USDC/CHFC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">United States Dollar Tether (USDT)</td>
-        <td class="text-left">USDC/USDT</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">DAI Stablecoin (DAI)</td>
-        <td class="text-left">USDC/DAI</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Ethereum (ETH)</td>
-        <td class="text-left">USDC/ETH</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Basic Attention Token (BAT)</td>
-        <td class="text-left">USDC/BAT</td>
-        <td class="text-center">Yes</td>
-      </tr>
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">USDC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">USDC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">USDC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">USDC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">USDC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">USDC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">USDC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">USDC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">USDC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">USDC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">USDC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">USDC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Tether (USDT)</td>
+          <td class="text-left">USDC/USDT</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">DAI Stablecoin (DAI)</td>
+          <td class="text-left">USDC/DAI</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Ethereum (ETH)</td>
+          <td class="text-left">USDC/ETH</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Basic Attention Token (BAT)</td>
+          <td class="text-left">USDC/BAT</td>
+          <td class="text-center">Yes</td>
+        </tr>
 
-    </tbody>
-  </table>
-    
-  </br>
+      </tbody>
+    </table>
 
-  <table class="table-fill">
+    </br>
 
-    <thead>
-      <tr>
-        <th class="text-left">United Stated Dollar Tether (USDT)</th>
-        <th class="text-left">Link</th>
-        <th class="text-center">Available</th>
-      </tr>
-    </thead>
+    <table class="table-fill">
 
-    <tbody class="table-hover">
-      <tr>
-        <td class="text-left">United States Dollar Coin (USDC)</td>
-        <td class="text-left">USDT/USDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">DAI Stablecoin (DAI)</td>
-        <td class="text-left">USDT/DAI</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Ethereum (ETH)</td>
-        <td class="text-left">USDT/ETH</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Basic Attention Token (BAT)</td>
-        <td class="text-left">USDT/BAT</td>
-        <td class="text-center">Yes</td>
-      </tr>
+      <thead>
+        <tr>
+          <th class="text-left">United Stated Dollar Tether (USDT)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
 
-    </tbody>
-  </table>
-    
-  </br>
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">USDT/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">DAI Stablecoin (DAI)</td>
+          <td class="text-left">USDT/DAI</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Ethereum (ETH)</td>
+          <td class="text-left">USDT/ETH</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Basic Attention Token (BAT)</td>
+          <td class="text-left">USDT/BAT</td>
+          <td class="text-center">Yes</td>
+        </tr>
 
-  <table class="table-fill">
+      </tbody>
+    </table>
 
-    <thead>
-      <tr>
-        <th class="text-left">DAI Stablecoin</th>
-        <th class="text-left">Link</th>
-        <th class="text-center">Available</th>
-      </tr>
-    </thead>
+    </br>
 
-    <tbody class="table-hover">
-      <tr>
-        <td class="text-left">United States Dollar Coin (USDC)</td>
-        <td class="text-left">DAI/USDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">United Stated Dollar Tether (USDT)</td>
-        <td class="text-left">DAI/USDT</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Ethereum (ETH)</td>
-        <td class="text-left">DAI/ETH</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Basic Attention Token (BAT)</td>
-        <td class="text-left">DAI/BAT</td>
-        <td class="text-center">Yes</td>
-      </tr>
+    <table class="table-fill">
 
-    </tbody>
-  </table>
-  
-  </br>
+      <thead>
+        <tr>
+          <th class="text-left">DAI Stablecoin</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
 
-  <table class="table-fill">
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">DAI/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United Stated Dollar Tether (USDT)</td>
+          <td class="text-left">DAI/USDT</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Ethereum (ETH)</td>
+          <td class="text-left">DAI/ETH</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Basic Attention Token (BAT)</td>
+          <td class="text-left">DAI/BAT</td>
+          <td class="text-center">Yes</td>
+        </tr>
 
-    <thead>
-      <tr>
-        <th class="text-left">Australian Dollar (AUDC)</th>
-        <th class="text-left">Link</th>
-        <th class="text-center">Available</th>
-      </tr>
-    </thead>
+      </tbody>
+    </table>
 
-    <tbody class="table-hover">
-      <tr>
-        <td class="text-left">British Pound Sterling (GBPC)</td>
-        <td class="text-left">AUDC/GBPC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Canadian Dollar (CADC)</td>
-        <td class="text-left">AUDC/CADC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Chinese Yuan (CNYC)</td>
-        <td class="text-left">AUDC/CNYC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Euro (EURC)</td>
-        <td class="text-left">AUDC/EURC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Hong Kong Dollar (HKDC)</td>
-        <td class="text-left">AUDC/HKDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Iranian Rial (IRRC)</td>
-        <td class="text-left">AUDC/IRRC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Iraqi Dinar (IQDC)</td>
-        <td class="text-left">AUDC/IQDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Japanese Yen (JPYC)</td>
-        <td class="text-left">AUDC/JPYC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">New Zealand Dollar (NZDC)</td>
-        <td class="text-left">AUDC/NZDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Russian Ruble (RUBC)</td>
-        <td class="text-left">AUDC/RUBC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">Swiss Franc (CHFC)</td>
-        <td class="text-left">AUDC/CHFC</td>
-        <td class="text-center">Yes</td>
-      </tr>
-      <tr>
-        <td class="text-left">United States Dollar Coin (USDC)</td>
-        <td class="text-left">AUDC/USDC</td>
-        <td class="text-center">Yes</td>
-      </tr>
+    </br>
 
-    </tbody>
-  </table>
+    <table class="table-fill">
 
-</body>
+      <thead>
+        <tr>
+          <th class="text-left">Ethereum (ETH)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">ETH/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Tether (USDT)</td>
+          <td class="text-left">ETH/USDT</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">DAI Stablecoin (DAI)</td>
+          <td class="text-left">ETH/DAI</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Basic Attention Coin (BAT)</td>
+          <td class="text-left">ETH/BAT</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Australian Dollar (AUDC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">AUDC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">AUDC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">AUDC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">AUDC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">AUDC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">AUDC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">AUDC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">AUDC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">AUDC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">AUDC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">AUDC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">AUDC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">British Pound Sterling (GBPC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">GBPC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">GBPC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">GBPC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">GBPC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">GBPC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">GBPC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">GBPC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">GBPC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">GBPC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">GBPC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">GBPC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">GBPC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Canadian Dollar (CADC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">CADC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">CADC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">CADC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">CADC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">CADC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">CADC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">CADC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">CADC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">CADC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">CADC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">CADC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">CADC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Chinese Yuan (CNYC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">CNYC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">CNYC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">CNYC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">CNYC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">CNYC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">CNYC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">CNYC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">CNYC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">CNYC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">CNYC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">CNYC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">CNYC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Euro (EURC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">EURC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">EURC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">EURC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">EURC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">EURC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">EURC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">EURC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">EURC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">EURC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">EURC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">EURC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">EURC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Hong Kong Dollar (HKDC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">HKDC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">HKDC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">HKDC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">HKDC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">HKDC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">HKDC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">HKDC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">HKDC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">HKDC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">HKDC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">HKDC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">HKDC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Iranian Rial (IRRC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">IRRC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">IRRC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">IRRC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">IRRC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">IRRC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">IRRC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">IRRC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">IRRC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">IRRC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">IRRC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">IRRC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">IRRC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Iraqi Dinar (IQDC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">IQDC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">IQDC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">IQDC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">IQDC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">IQDC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">IQDC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">IQDC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">IQDC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">IQDC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">IQDC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">IQDC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">IQDC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Japanese Yen (JPYC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">JPYC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">JPYC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">JPYC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">JPYC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">JPYC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">JPYC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">JPYC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">JPYC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">JPYC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">JPYC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">JPYC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">JPYC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">New Zealand Dollar (NZDC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">NZDC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">NZDC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">NZDC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">NZDC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">NZDC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">NZDC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">NZDC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">NZDC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">NZDC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">NZDC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">NZDC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">NZDC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Russian Ruble (RUBC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">RUBC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">RUBC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">RUBC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">RUBC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">RUBC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">RUBC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">RUBC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">RUBC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">RUBC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">RUBC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Swiss Franc (CHFC)</td>
+          <td class="text-left">RUBC/CHFC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">RUBC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    </br>
+
+    <table class="table-fill">
+
+      <thead>
+        <tr>
+          <th class="text-left">Swiss Franc (CHFC)</th>
+          <th class="text-left">Link</th>
+          <th class="text-center">Available</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">Australian Dollar (AUDC)</td>
+          <td class="text-left">CHFC/AUDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">British Pound Sterling (GBPC)</td>
+          <td class="text-left">CHFC/GBPC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Canadian Dollar (CADC)</td>
+          <td class="text-left">CHFC/CADC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Chinese Yuan (CNYC)</td>
+          <td class="text-left">CHFC/CNYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Euro (EURC)</td>
+          <td class="text-left">CHFC/EURC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Hong Kong Dollar (HKDC)</td>
+          <td class="text-left">CHFC/HKDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iranian Rial (IRRC)</td>
+          <td class="text-left">CHFC/IRRC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Iraqi Dinar (IQDC)</td>
+          <td class="text-left">CHFC/IQDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Japanese Yen (JPYC)</td>
+          <td class="text-left">CHFC/JPYC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">New Zealand Dollar (NZDC)</td>
+          <td class="text-left">CHFC/NZDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">Russian Ruble (RUBC)</td>
+          <td class="text-left">CHFC/RUBC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+        <tr>
+          <td class="text-left">United States Dollar Coin (USDC)</td>
+          <td class="text-left">CHFC/USDC</td>
+          <td class="text-center">Yes</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </body>
+
 </html>
+
 
