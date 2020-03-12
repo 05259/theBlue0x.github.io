@@ -13,17 +13,17 @@ $.getJSON(url, function (data) {
 });
 
 
-let qdropdown = $('#quoteCurrency');
+let dropdown2 = $('#quoteCurrency');
 
-qdropdown.append('<option selected="true" disabled>I would like to have this currency...</option>');
-qdropdown.prop('selectedIndex', 0);
+dropdown2.append('<option selected="true" disabled>I would like to have this currency...</option>');
+dropdown2.prop('selectedIndex', 0);
 
-const qurl = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.io/master/quote_currencies.json';
+const url2 = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.io/master/quote_currencies.json';
 
 // Populate dropdown with list of provinces
-$.getJSON(qurl, function (data) {
-  $.each(data, function (key, quote) {
-    qdropdown.append($('<option></option>').attr('value', quote).text(quote));
+$.getJSON(url2, function (data) {
+  $.each(data, function (key, value2) {
+    dropdown2.append($('<option></option>').attr('value', value2).text(value2));
   })
 });
 
