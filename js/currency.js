@@ -1,7 +1,7 @@
 let basedropdown = $('#baseCurrency');
 
-dropdown.append('<option selected="true" disabled>I have this currency...</option>');
-dropdown.prop('selectedIndex', 0);
+basedropdown.append('<option selected="true" disabled>I have this currency...</option>');
+basedropdown.prop('selectedIndex', 0);
 
 const baseurl = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.io/master/base_currencies.json';
 
@@ -15,8 +15,8 @@ $.getJSON(baseurl, function (data) {
 
 let quotedropdown = $('#quoteCurrency');
 
-dropdown.append('<option selected="true" disabled>I would like to have this currency...</option>');
-dropdown.prop('selectedIndex', 0);
+quotedropdown.append('<option selected="true" disabled>I would like to have this currency...</option>');
+quotedropdown.prop('selectedIndex', 0);
 
 const quoteurl = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.io/master/quote_currencies.json';
 
