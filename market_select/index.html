@@ -39,10 +39,14 @@
             function passUrl() {
               var d = document.getElementById("baseCurrency");
               var base = d.options[d.selectedIndex].value.toLowerCase();
-
+              
+              if (base= "i have this currency..."){
+              alert("Please choose a currency.");
+              } 
+              else { 
               window.location.href = "./" + base + "/";
-
-            }
+              }
+            } 
 
           </script>
           </br>
