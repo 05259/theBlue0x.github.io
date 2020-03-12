@@ -40,13 +40,12 @@
               var d = document.getElementById("baseCurrency");
               var base = d.options[d.selectedIndex].value.toLowerCase();
               
-              if (base= "i have this currency..."){
-              alert("Please choose a currency.");
-              } 
-              else { 
-              window.location.href = "./" + base + "/";
+              if (!$('#baseCurrency').val()) { //check if select got any value
+                 alert("You Error message");
+              return;
               }
-            } 
+              window.location.href = "./" + base + "/";
+             }
 
           </script>
           </br>
