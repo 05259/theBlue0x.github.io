@@ -34,16 +34,13 @@
 
           <select class="form-control" id="baseCurrency">
           </select>
-          </br>
-          <select class="form-control" id="quoteCurrency">
-          </select>
 
           <script type="text/javascript">
             function passUrl() {
-              var d = document.getElementById("quoteCurrency");
+              var d = document.getElementById("baseCurrency");
               var base = d.options[d.selectedIndex].value.toLowerCase();
 
-              alert(base);
+              window.location.href = "./"+ base;
 
             }
 
