@@ -10,7 +10,8 @@ $.getJSON(baseurl, function (data) {
   $.each(data, function (key, value) {
     basedropdown.append($('<option></option>').attr('value', value).text(value));
   })
-})
+});
+
 
 let quotedropdown = $('#quoteCurrency');
 
@@ -25,7 +26,6 @@ $.getJSON(quoteurl, function (data) {
     quotedropdown.append($('<option></option>').attr('value', quotevalue).text(quotevalue));
   })
 });
-;
 
 
 
