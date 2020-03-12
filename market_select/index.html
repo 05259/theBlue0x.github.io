@@ -38,7 +38,7 @@
       function passUrl()
         {
           var d = document.getElementById("baseCurrency");
-	  var base = d.options[d.selectedIndex].value.toLowerCase();
+	  var base = d.options[d.selectedIndex].key.toLowerCase();
 
           window.location.href ="https://blue0x.io/market_select/" + base;
         }
