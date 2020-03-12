@@ -35,18 +35,13 @@
           <select class="form-control" id="baseCurrency">
           </select>
           </br>
-          <select class="form-control" id="quoteCurrency">
-          </select>
-
+          
           <script type="text/javascript">
             function passUrl() {
               var d = document.getElementById("baseCurrency");
               var base = d.options[d.selectedIndex].value.toLowerCase();
 
-              var e = document.getElementById("quoteCurrency");
-              var quote = e.options[e.selectedIndex].value.toLowerCase();
-
-              window.location.href = "https://trade.blue0x.io/#/erc20/?base=" + base + "&quote=" + quote;
+              window.location.href = "../" + base;
 
             }
 
