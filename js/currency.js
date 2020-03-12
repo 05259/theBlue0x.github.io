@@ -1,14 +1,14 @@
-let basedropdown = $('#baseCurrency');
+let dropdown = $('#baseCurrency');
 
 dropdown.append('<option selected="true" disabled>I have this currency...</option>');
 dropdown.prop('selectedIndex', 0);
 
-const baseurl = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.io/master/base_currencies.json';
+const url = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.io/master/base_currencies.json';
 
 // Populate dropdown with list of provinces
-$.getJSON(baseurl, function (data) {
+$.getJSON(url, function (data) {
   $.each(data, function (key, value) {
-    basedropdown.append($('<option></option>').attr('value', value).text(value));
+    dropdown.append($('<option></option>').attr('value', value).text(value));
   })
 });
 
