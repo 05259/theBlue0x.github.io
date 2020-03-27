@@ -30,14 +30,30 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h2 class="text-white mx-auto mt-2 mb-5"> You will need to own DAI to enter the ForX market.  Do you currently own DAI?: </h2>
-           </br>
-            <select id="DAImenu">
-              <option value="" >Please Choose...</option>
-              <option value="comingsoon.html">Yes, I already have DAI.</option>
-              <option value="getDAI.html">No, I would like to obtain DAI.</option>
-            </select>
-            <button id="go" onclick="gotoDAI()">Go</button>
+          <h2 class="text-white mx-auto mt-2 mb-5"> You will need to own DAI to enter the ForX market.  
+            </br>
+            Do you currently own DAI?: </h2>
+            </br>
+          <select id="DAImenu">
+          <option value="" >Please Choose...</option>
+          <option value="comingsoon.html">Yes, I already have DAI in my wallet.</option>
+          <option value="http://www.youtube.com/">No, I need to obtain DAI.</option>
+          </select>
+          
+          <script type="text/javascript">
+            function passDAIUrl() {
+              var gotoDAI = document.getElementById("DAImenu").value;
+              
+              if (!$('#DAImenu').val()) { //check if select got any value
+                 alert("Please select a choice from the dropdown menu.");
+              return;
+              }
+              window.location.href = gotoDAI;
+             }
+
+          </script>
+          </br>
+          <button onClick="passUrl()"> Continue </button>
           </br>
           </br>
           </br>
