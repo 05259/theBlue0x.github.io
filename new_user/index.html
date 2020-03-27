@@ -32,8 +32,12 @@
         <div class="mx-auto text-center">
           <h2 class="text-white mx-auto mt-2 mb-5"> You will need to own DAI to enter the ForX market.  Do you currently own DAI?: </h2>
            </br>
-            <input type="RADIO" onclick="window.location='../comingsoon.html'">Yes
-            <input type="RADIO" onclick="window.location='other_to_DAI.html'">N0
+            <select id="DAImenu">
+              <option value="" >Please Choose...</option>
+              <option value="comingsoon.html">Yes, I already have DAI.</option>
+              <option value="getDAI.html">No, I would like to obtain DAI.</option>
+            </select>
+            <button id="go" onclick="gotoDAI()">Go</button>
           </br>
           </br>
           </br>
@@ -43,7 +47,10 @@
           |
           <a href="../">Go Back</a>
 
-          
+          <script>
+            function gotoDAI() {
+            window.location.href = document.getElementById("DAImenu").value;
+          </script>
         </div>
       </div>
     </header>
