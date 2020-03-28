@@ -4,9 +4,9 @@
   <head>
 
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/png" href="../icon-196x196.png">
-    <link rel="shortcut icon" sizes="196x196" href="../icon-196x196.png">
-    <link rel="apple-touch-icon" href="../icon-196x196.png">
+    <link rel="shortcut icon" type="image/png" href="../../icon-196x196.png">
+    <link rel="shortcut icon" sizes="196x196" href="../../icon-196x196.png">
+    <link rel="apple-touch-icon" href="../../icon-196x196.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Blue0x Decentralized Exchange">
     <meta name="author" content="Blue0x">
@@ -14,15 +14,15 @@
     <title>Blue0x.io</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/grayscale.min.css" rel="stylesheet">
+    <link href="../../css/grayscale.min.css" rel="stylesheet">
 
   </head>
 
@@ -30,50 +30,54 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h2 class="text-white mx-auto mt-2 mb-5"> You need to have DAI in order to start using the ForX&#8482 Network.  Do you currently own DAI?:</h2>
-            
-          <select class="form-control" id="DAImenu">
-          <option value="" >Please Choose...</option>
-          <option value="../getUSDX">Yes, I currently have DAI.</option>
-          <option value="../getDAI">No, I will need to obtain DAI.</option>
-          </select>
-          
-          <script type="text/javascript">
-            function passDAIUrl() {
-              var gotoDAI = document.getElementById("DAImenu").value;
-              
-              if (!$('#DAImenu').val()) { //check if select got any value
-                 alert("Please select a choice from the dropdown menu.");
-              return;
-              }
-              window.location.href = gotoDAI;
-             }
+          <h2 class="text-white mx-auto mt-2 mb-5">For the best ForX&#8482 experience, we recommend using the MetaMask wallet extension.  Do you currently have MetaMask installed? </h2>
+          <select class="form-control" id="Metamenu">
+           <option value="">Please Choose...</option>
+           <option value="Yes">Yes, I currently have MetaMask installed.</option>
+           <option value="No">No, I would like to install MetaMask.</option>
+         </select>
+
+         <script type="text/javascript">
+            function passMetaUrl() {
+            var gotoMeta = document.getElementById("Metamenu").value;
+            if (gotoMeta === "No") {
+            window.open("https://metamask.io");
+            }
+            if (gotoMeta === "Yes") {
+            window.location.href = "./DAI";
+            }
+            if (!$('#Metamenu').val()) { //check if select got any value
+            alert("Please select a choice from the dropdown menu.");
+            return;
+            }
+            $("#Metamenu").reset();
+            }
 
           </script>
           </br>
-          <button onClick="passDAIUrl()"> Continue </button>
+          <button onClick="passMetaUrl()"> Continue </button>
           </br>
           </br>
           </br>
-          <a href="../markets">View All Markets</a>
+          <a href="../../markets">View All Markets</a>
           |
-          <a href="../comingsoon.html">View My Wallet</a>
+          <a href="../../comingsoon.html">View My Wallet</a>
           |
-          <a href="../">Go Back</a>
+          <a href="./">Go Back</a>
 
         </div>
       </div>
     </header>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="../js/grayscale.min.js"></script>
+    <script src="../../js/grayscale.min.js"></script>
 
 
   </body>
