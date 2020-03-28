@@ -32,24 +32,26 @@
         <div class="mx-auto text-center">
           <h2 class="text-white mx-auto mt-2 mb-5">For the best ForX&#8482 experience, we recommend using the MetaMask wallet extension.  Do you currently have MetaMask installed? </h2>
           <select class="form-control" id="Metamenu">
-          <option value="" >Please Choose...</option>
-          <option value="./DAI">Yes, I currently have MetaMask installed.</option>
-          <option value="No">No, I would like to install MetaMask.</option>
-          </select>
-          
-          <script type="text/javascript">
+           <option value="">Please Choose...</option>
+           <option value="Yes">Yes, I currently have MetaMask installed.</option>
+           <option value="No">No, I would like to install MetaMask.</option>
+         </select>
+
+         <script type="text/javascript">
             function passMetaUrl() {
-              var gotoMeta = document.getElementById("Metamenu").value;
-              if (gotoMeta ==="No"){
-              window.open("https://metamask.io");
-              }
-              
-              if (!$('#Metamenu').val()) { //check if select got any value
-                 alert("Please select a choice from the dropdown menu.");
-              return;
-              }
-              window.location.href = gotoMeta;
-             }
+            var gotoMeta = document.getElementById("Metamenu").value;
+            if (gotoMeta === "No") {
+            window.open("https://metamask.io");
+            }
+            if (gotoMeta === "Yes") {
+            window.location.href = "./DAI";
+            }
+            if (!$('#Metamenu').val()) { //check if select got any value
+            alert("Please select a choice from the dropdown menu.");
+            return;
+            }
+            document.getElementById("Metamenu").reset;
+            }
 
           </script>
           </br>
