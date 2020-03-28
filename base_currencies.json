@@ -11,10 +11,5 @@
   "JPYX": "Japanese Yen (JPYX)",
   "NZDX": "New Zealand Dollar (NZDX)",
   "RUBX": "Russian Ruble (RUBX)",
-  "CHFX": "Swiss Franc (CHFX)",
-  "USDC": "United States Dollar Coin (USDC)",
-  "USDT": "United States Dollar Tether (USDT)",
-  "DAI": "DAI Stablecoin (DAI)",
-  "ETH": "Ethereum (ETH)",
-  "BAT": "Basic Attention Token (BAT)"
+  "CHFX": "Swiss Franc (CHFX)"
 }
