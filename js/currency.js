@@ -2,7 +2,7 @@ let dropdown = $('#baseCurrency');
 
 dropdown.empty();
 
-dropdown.append('<option selected="true" disabled>I have this currency...</option>');
+dropdown.append('<option selected="true" disabled>I would like to exchange...</option>');
 dropdown.prop('selectedIndex', 0);
 
 const url = 'https://raw.githubusercontent.com/theBlue0x/theBlue0x.github.io/master/base_currencies.json';
