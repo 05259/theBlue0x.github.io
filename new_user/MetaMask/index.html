@@ -34,12 +34,15 @@
           <select class="form-control" id="Metamenu">
           <option value="" >Please Choose...</option>
           <option value="./DAI">Yes, I currently have MetaMask installed.</option>
-          <option value="https://metamask.io">No, I would like to install MetaMask.</option>
+          <option value="No">No, I would like to install MetaMask.</option>
           </select>
           
           <script type="text/javascript">
             function passMetaUrl() {
               var gotoMeta = document.getElementById("Metamenu").value;
+              if (gotoMeta ==="No"){
+              window.open("https://metamask.io");
+              }
               
               if (!$('#Metamenu').val()) { //check if select got any value
                  alert("Please select a choice from the dropdown menu.");
