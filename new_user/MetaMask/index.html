@@ -34,7 +34,7 @@
           <select class="form-control" id="Metamenu">
           <option value="" >Please Choose...</option>
           <option value="./DAI">Yes, I currently have MetaMask installed.</option>
-          <option value="No">No, I would like to install MetaMask.</option>
+          <option value="https://metamask.io">No, I would like to install MetaMask.</option>
           </select>
           
           <script type="text/javascript">
@@ -43,9 +43,6 @@
               
               if (!$('#Metamenu').val()) { //check if select got any value
                  alert("Please select a choice from the dropdown menu.");
-              return;
-              if (!$('#Metamenu').val(No)) { //MetaMask.io link
-                 window.open("https://metamask.io");
               return;
               }
               window.location.href = gotoMeta;
