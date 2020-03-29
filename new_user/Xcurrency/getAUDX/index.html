@@ -130,7 +130,7 @@
         border-collapse: collapse;
         height: 15px;
         margin: auto;
-        max-width: 700px;
+        max-width: 600px;
         padding: 5px;
         width: 100%;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
@@ -140,10 +140,10 @@
       th {
         color: white;
         background: #2775CA;
-        border-bottom: 4px solid black;
-        border-right: 4px solid black;
+        border-bottom: 4px solid grey;
+        border-right: 2px solid black;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 500;
         padding: 13px;
         text-align: left;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -174,7 +174,7 @@
         padding: 16px;
         text-align: left;
         vertical-align: middle;
-        height: 120px;
+        height: 80px;
         font-weight: 300;
         font-size: 14px;
         text-shadow: -1px -1px 1px rgba(0, 0, 0, 0);
@@ -226,7 +226,7 @@
           <br>
 
           <table class="table-fill">
-             <thead>
+            <thead>
               <tr>
                 <th class="text-center">Real-Time Fiat Market Price:</th>
                 <th class="text-center">Real-Time ForX&#8482 Network Price:</th>
@@ -239,12 +239,12 @@
                   <!-- TradingView Widget BEGIN -->
                   <div class="tradingview-widget-container">
                     <div class="tradingview-widget-container__widget"></div>
-                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/FX-AUDUSD/" rel="noopener" target="_blank"><span class="blue-text">AUD/USD Rates</span></a> by TradingView</div>
+                    <div class="tradingview-widget-copyright"></div>
 
                     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
                       {
                         "symbol": "FX:AUDUSD",
-                        "width": "300",
+                        "width": "275",
                         "colorTheme": "light",
                         "isTransparent": true,
                         "locale": "en"
@@ -303,6 +303,7 @@
   </body>
 
 </html>
+
 
 
 
