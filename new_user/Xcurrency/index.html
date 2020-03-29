@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -31,42 +31,42 @@
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
           <h2 class="text-white mx-auto mt-2 mb-5"> Which ForX&#8482 Network currency would you like to start with?:</h2>
-            
+
           <select class="form-control" id="Xmenu">
-          <option value="" >Please Choose...</option>
-          <option value="./getUSDX">United States Dollar (USDX)</option>
-          <option value="./getAUDX">Australian Dollar (AUDX)</option>
-          <option value="./getGBPX">British Pound Sterling (GBPX)</option>
-          <option value="./getCADX">Canadian Dollar (CADX)</option>
-          <option value="./getCNYX">Chinese Yuan (CNYX)</option>
-          <option value="./getEURX">Euro (EURX)</option>
-          <option value="./getHKDX">Hong Kong Dollar (HKDX)</option>
-          <option value="./getIRRX">Iranian Rial (IRRX)</option>
-          <option value="./getIQDX">Iraqi Dinar (IQDX)</option>
-          <option value="./getJPYX">Japanese Yen (JPYX)</option>
-          <option value="./getNZDX">New Zealand Dollar (NZDX)</option>
-          <option value="./getRUBX">Russian Ruble (RUBX)</option>
-          <option value="./getCHFX">Swiss Franc (CHFX)</option>
+            <option value="">Please Choose...</option>
+            <option value="./getUSDX">United States Dollar (USDX)</option>
+            <option value="./getAUDX">Australian Dollar (AUDX)</option>
+            <option value="./getGBPX">British Pound Sterling (GBPX)</option>
+            <option value="./getCADX">Canadian Dollar (CADX)</option>
+            <option value="./getCNYX">Chinese Yuan (CNYX)</option>
+            <option value="./getEURX">Euro (EURX)</option>
+            <option value="./getHKDX">Hong Kong Dollar (HKDX)</option>
+            <option value="./getIRRX">Iranian Rial (IRRX)</option>
+            <option value="./getIQDX">Iraqi Dinar (IQDX)</option>
+            <option value="./getJPYX">Japanese Yen (JPYX)</option>
+            <option value="./getNZDX">New Zealand Dollar (NZDX)</option>
+            <option value="./getRUBX">Russian Ruble (RUBX)</option>
+            <option value="./getCHFX">Swiss Franc (CHFX)</option>
 
           </select>
-          
+
           <script type="text/javascript">
             function passXUrl() {
               var gotoX = document.getElementById("Xmenu").value;
-              
+
               if (!$('#Xmenu').val()) { //check if select got any value
-                 alert("Please select a choice from the dropdown menu.");
-              return;
+                alert("Please select a choice from the dropdown menu.");
+                return;
               }
               window.location.href = gotoX;
-             }
+            }
 
           </script>
-          </br>
-          <button onClick="passXUrl()"> Continue </button>
-          </br>
-          </br>
-          </br>
+          <br>
+          <button class="myButton" onClick="passXUrl()"> Continue </button>
+          <br>
+          <br>
+          <br>
           <!--<a href="../../comingsoon.html">What is DAI?</a>
           |
           <a href="#" onClick="window.open('../../comingsoon.html')">What is an Entry Token?</a>
@@ -89,4 +89,5 @@
 
 
   </body>
+
 </html>
