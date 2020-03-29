@@ -146,20 +146,20 @@
 }
 
 .btn-primary {
-  background-color: #1FC536;
+  background-color: #64a19d;
 }
 
 .btn-primary:hover {
-  background-color: #2FAB40 ;
+  background-color: #4f837f;
 }
 
 .btn-primary:focus {
-  background-color: #1FC536;
+  background-color: #4f837f;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #1FC536 !important;
+  background-color: #467370 !important;
 }
 
 .about-section {
