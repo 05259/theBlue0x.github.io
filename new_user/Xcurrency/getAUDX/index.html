@@ -23,7 +23,7 @@
 
     <style>
       body {
-        background-image: url("https://github.com/theBlue0x/theBlue0x.github.io/blob/master/img/bg-masthead.jpg?raw=true");
+        background-image: url("../../../img/bg-masthead.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         font-family: "Roboto", helvetica, arial, sans-serif;
@@ -125,7 +125,7 @@
       /*** Table Styles **/
 
       .table-fill {
-        background-color: transparent;
+        background-color: white;
         border-radius: 3px;
         border-collapse: collapse;
         height: 15px;
@@ -139,7 +139,7 @@
 
       th {
         color: white;
-        background: transparent;
+        background: #2775CA;
         border-bottom: 4px solid black;
         border-right: 4px solid black;
         font-size: 14px;
@@ -161,7 +161,7 @@
 
       tr {
         border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid white;
         color: white;
         font-size: 14px;
         font-weight: normal;
@@ -169,8 +169,8 @@
       }
 
       td {
-        background: transparent;
-        color: white;
+        background: white;
+        color: black;
         padding: 16px;
         text-align: left;
         vertical-align: middle;
@@ -226,7 +226,12 @@
           <br>
 
           <table class="table-fill">
-
+             <thead>
+              <tr>
+                <th class="text-left">Real-Time Fiat Market Price:</th>
+                <th class="text-left">Real-Time ForX&#8482 Network Price:</th>
+              </tr>
+            </thead>
 
             <tbody class="table-hover">
               <tr>
@@ -240,7 +245,7 @@
                       {
                         "symbol": "FX:AUDUSD",
                         "width": "300",
-                        "colorTheme": "dark",
+                        "colorTheme": "light",
                         "isTransparent": true,
                         "locale": "en"
                       }
@@ -249,7 +254,7 @@
                   </div>
                   <!-- TradingView Widget END -->
                 </td>
-                <td class="text-center">// AUDX / USDX Rates Go Here </td>
+                <td class="text-center">// AUDX / USDX Rates Go Here When API is Done</td>
               </tr>
             </tbody>
           </table>
