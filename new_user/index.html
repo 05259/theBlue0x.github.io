@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -29,34 +29,34 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h2 class="text-white mx-auto mt-2 mb-5">For the best ForX&#8482 experience, we recommend using the MetaMask wallet extension.  Do you currently have MetaMask installed?: </h2>
+          <h2 class="text-white mx-auto mt-2 mb-5">For the best ForX&#8482 experience, we recommend using the MetaMask wallet extension. Do you currently have MetaMask installed?: </h2>
           <select class="form-control" id="Metamenu">
-           <option value="">Please Choose...</option>
-           <option value="Yes">Yes, I currently have MetaMask installed.</option>
-           <option value="No">No, I would like to install MetaMask.</option>
-         </select>
+            <option value="">Please Choose...</option>
+            <option value="Yes">Yes, I currently have MetaMask installed.</option>
+            <option value="No">No, I would like to install MetaMask.</option>
+          </select>
 
-         <script type="text/javascript">
+          <script type="text/javascript">
             function passMetaUrl() {
-            var gotoMeta = document.getElementById("Metamenu").value;
-            if (gotoMeta === "No") {
-            window.open("https://metamask.io");
-            }
-            if (gotoMeta === "Yes") {
-            window.location.href = "./DAI";
-            }
-            if (!$('#Metamenu').val()) { //check if select got any value
-            alert("Please select a choice from the dropdown menu.");
-            return;
-            }
+              var gotoMeta = document.getElementById("Metamenu").value;
+              if (gotoMeta === "No") {
+                window.open("https://metamask.io");
+              }
+              if (gotoMeta === "Yes") {
+                window.location.href = "./DAI";
+              }
+              if (!$('#Metamenu').val()) { //check if select got any value
+                alert("Please select a choice from the dropdown menu.");
+                return;
+              }
             }
 
           </script>
-          </br>
+          <br>
           <a class="myButton" onClick="passMetaUrl()">Continue</a>
-          </br>
-          </br>
-          </br>
+          <br>
+          <br>
+          <br>
           <!--<a href="../markets">View All Markets</a>
           |-->
           <a href="#" onClick="window.open('https://metamask.io')">What is MetaMask?</a>
@@ -79,4 +79,5 @@
 
 
   </body>
+
 </html>
