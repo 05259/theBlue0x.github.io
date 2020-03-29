@@ -23,23 +23,62 @@
 
     <style>
       body {
-        background-image: url("../../../img/bg-masthead.jpg");
+        background-image: url("https://github.com/theBlue0x/theBlue0x.github.io/blob/master/img/bg-masthead.jpg?raw=true");
         background-repeat: no-repeat;
         background-attachment: fixed;
         font-family: "Roboto", helvetica, arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 85%;
-  margin: auto;
-}
-        
+        font-size: 14px;
+        font-weight: 400;
+        text-rendering: optimizeLegibility;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 85%;
+        margin: auto;
+      }
+
+      .myButton {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+        background: -moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+        background: -webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+        background: -o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+        background: -ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+        background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2', GradientType=0);
+        background-color: #0275d8;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        border: 1px solid #057fd0;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+
+        &:hover {
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
+          background: -moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+          background: -webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+          background: -o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+          background: -ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+          background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef', GradientType=0);
+          background-color: #019ad2;
+        }
+
+        &:active {
+          position: relative;
+          top: 1px;
+        }
+      }
+
       form {
         color: white;
         max-width: 300px;
@@ -48,7 +87,7 @@
 
       form p {
         color: white;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 600;
         font-style: normal;
         font-family: "Roboto", helvetica, arial, sans-serif;
@@ -208,7 +247,7 @@
                       {
                         "symbol": "FX:AUDUSD",
                         "width": "300",
-                        "colorTheme": "dark",
+                        "colorTheme": "light",
                         "isTransparent": true,
                         "locale": "en"
                       }
@@ -246,13 +285,12 @@
             <button class="myButton">Submit Order</button>
           </form>
           <br>
-          <br>
           <a href="../">Go Back</a>
 
         </div>
       </div>
     </header>
-    
+
     <!-- Bootstrap core JavaScript -->
     <script src="../../../vendor/jquery/jquery.min.js"></script>
     <script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -263,8 +301,10 @@
     <!-- Custom scripts for this template -->
     <script src="../../../js/grayscale.min.js"></script>
 
-</body>
+  </body>
+
 </html>
+
 
 
 
