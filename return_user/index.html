@@ -24,42 +24,45 @@
     <!-- Custom styles for this template -->
     <link href="../css/grayscale.min.css" rel="stylesheet">
     <style>
-.myButton {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
-	background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-	background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-	background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-	background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2',GradientType=0);
-	background-color:#0275d8;
-	-webkit-border-radius:7px;
-	-moz-border-radius:7px;
-	border-radius:7px;
-	border:1px solid #057fd0;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	&:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
-	background:-moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-	background:-webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-	background:-o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-	background:-ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef',GradientType=0);
-	background-color:#019ad2;
-}
- &:active {
-	position:relative;
-	top:1px;
-}
- }
+      .myButton {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+        background: -moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+        background: -webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+        background: -o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+        background: -ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+        background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2', GradientType=0);
+        background-color: #0275d8;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        border: 1px solid #057fd0;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+
+        &:hover {
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
+          background: -moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+          background: -webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+          background: -o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+          background: -ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+          background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef', GradientType=0);
+          background-color: #019ad2;
+        }
+
+        &:active {
+          position: relative;
+          top: 1px;
+        }
+      }
+
     </style>
   </head>
 
@@ -71,33 +74,33 @@
 
           <select class="form-control" id="baseCurrency">
           </select>
-          
+
           <script type="text/javascript">
             function passUrl() {
               var d = document.getElementById("baseCurrency");
               var base = d.options[d.selectedIndex].value.toLowerCase();
-              
+
               if (!$('#baseCurrency').val()) { //check if select got any value
-                 alert("Please select a currency from the dropdown menu.");
-              return;
+                alert("Please select a currency from the dropdown menu.");
+                return;
               }
               window.location.href = "../market_select/" + base + "/";
-             }
+            }
 
           </script>
-          </br>
+          <br>
           <button class="myButton" onClick="passUrl()"> Continue </button>
           <!--<button onClick="window.location.href = '../comingsoon.html';"> Continue </button>-->
-          </br>
-          </br>
-          </br>
+          <br>
+          <br>
+          <br>
           <a href="../markets">View All Markets</a>
           |
           <a href="../comingsoon.html">View My Wallet</a>
           |
           <a href="../">Go Back</a>
 
-          
+
         </div>
       </div>
     </header>
@@ -115,4 +118,6 @@
 
 
   </body>
+
 </html>
+
